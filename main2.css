@@ -2,114 +2,87 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 #header {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 #search-bar {
-  flex: 0 0 40%;
-}
-#search-bar input {
-  width: 100%;
-  padding: .7rem 2rem;
-  border-color: none;
-  background-color: gainsboro;
-  border-radius: 100px;
-  width: 90%;
-  transition: all .2s;
-  margin-right: -3.5rem;
+  flex-basis: 40%;
 }
 
+#search-bar input {
+  padding: .7rem .3rem;
+  border-radius: 100px;
+  width: 90%;
+  margin-right: -3rem;
+  background-color: gainsboro;
+  transition: all .2s;
+}
+#search-bar button {
+  border: none;
+  border-radius: 100px;
+  background-color: gainsboro;
+}
 #search-bar input:focus {
   outline: none;
   width: 100%;
 }
 
-
-#search-bar button {
-  background-color: gainsboro;
-  border: none;
-  border-radius: 100px;
-  
-}
-
-#search-bar button:focus {
-  outline: none;
-  
-}
-
-#search-bar button:active {
-  transform: translateY(2px);
-  
-}
-
+/* User data */
 #user-data {
   display: flex;
   align-items: center;
   align-self: stretch;
 }
-#user-data > div {
 
-  height: 100%;
+#user-data > div {
   padding: 0 1.5rem;
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 #user-data > div > i {
-  
   font-size: 2rem;
 }
+
 #user-data > div:hover {
   background-color: #efefef;
 }
 
-.user-info {
+#user-data .user-info {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
-.user-info img {
+#user-data .user-info img {
   width: 50px;
   border-radius: 100px;
 }
 
-
 #content {
-  width: 50%;
-  max-width: 350px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.address-book-item {
-  padding: 10px;
+#content .address-book-item {
+  width: 350px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid gray;
-}
-
-.address-book-item:hover {
-  background-color: #efefef;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
 }
 
 .address-book-item-info {
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
 }
 
 .address-book-item img {
   width: 100px;
   border-radius: 100px;
-  margin-right: 1rem;
+  margin-bottom: 1rem;
 }

@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color:mediumseagreen;
+}
+.form label {
+  flex: 1 0 120px;
+  display: block;
+  margin-right: 20px;
+}
+
+.form input {
+  padding: .75rem;
+  flex: 3 0 220px;
+  
+}
+.form input:focus {
+  outline: none;
+}
+
+.form-row {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+button.btn {
+  padding: .5rem;
+  border: 0;
+  flex: 0 0 40%;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 700px) {
+  .form-row {
+    margin-bottom: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form label {
+    flex: 0 0 20px;
+    text-align: left;
+  }
+  .form input {
+    width: 100%;
+    flex-grow: 0;
+    flex-basis: 20%;
+  }
+  .buttons {
+    flex-direction: row;
+  }
+}
