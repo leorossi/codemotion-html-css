@@ -1,0 +1,41 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  padding: .5rem;
+  background-color: dodgerblue;
+  width: 100%;
+}
+.form-row {
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+}
+.form-row input {
+  padding: .5rem;
+  flex: 2 0 250px;
+}
+
+.form-row label {
+  text-align: right;
+  margin-right: .5rem;
+  flex: 1 0 120px;
+}
+
+.form-row.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttons button {
+  padding: .5rem;
+  flex: 0 0 20%;
+}
