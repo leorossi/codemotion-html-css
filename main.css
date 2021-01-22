@@ -39,3 +39,27 @@ body {
   padding: .5rem;
   flex: 0 0 20%;
 }
+
+@media screen and (max-width: 750px) {
+  .form-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .form-row label {
+    margin-bottom: .5rem;
+    flex: 0 0 1rem;
+  }
+  .form-row input {
+    width: 100%;
+    flex: 0 0 1rem;
+  }
+
+  .form-row.buttons {
+    /* flex-direction: row; */
+  }
+  .buttons button {
+    width: 100%;
+    margin-bottom: .5rem;
+    flex: 1 1 50%;
+  }
+}
