@@ -1,0 +1,53 @@
+body {
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+.pricing {
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: .5rem;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.features {
+
+}
+
+.features .feature {
+  border-bottom: 1px solid black;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+}
+
+.price::before {
+  content: "€ ";
+}
+.price {
+  font-size: 1.5rem;
+  margin: .5rem 0;
+}
+
+.buttons button {
+  border: none;
+  border-radius: 10px;
+  padding: .5rem;
+}
