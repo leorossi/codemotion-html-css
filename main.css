@@ -1,0 +1,45 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 75px 1fr 75px;
+  grid-template-columns: 150px 1fr 150px;
+}
+
+header, footer {
+  grid-column: span 3;
+}
+.container > * {
+  
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav div {
+  padding: 20px;
+}
+
+section {
+  padding: .5rem;
+}
+
+
+aside div {
+  margin-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer div {
+  padding: 1.5rem;
+}
