@@ -4,13 +4,30 @@ html {
 
 .container {
   display: grid;
-  grid-template-rows: 75px 1fr 75px;
-  grid-template-columns: 150px 1fr 150px;
+  grid:
+    'header header header' 75px
+    'nav section aside' 1fr
+    'footer footer footer' 75px
+    / 150px 1fr 150px;
 }
 
-header, footer {
-  grid-column: span 3;
+header {
+  grid-area: header;
 }
+nav {
+  grid-area: nav;
+}
+section {
+  grid-area: section;
+}
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
+
 .container > * {
   
 }
@@ -42,4 +59,53 @@ footer {
 
 footer div {
   padding: 1.5rem;
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    grid:
+    'header header' 75px
+    'nav section' 1fr
+    'aside aside' 120px
+    'footer footer' 75px
+    / 120px 1fr;
+  }
+
+  aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  aside div {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .container {
+    grid:
+    'header' 75px
+    'nav' 75px
+    'section'
+    'aside' 120px
+    'footer' 75px
+    / 1fr;
+  }
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav div {
+    padding: .25rem;
+  }
+  aside {
+    justify-content: space-evenly;
+  }
+  aside div:nth-child(3) {
+    display: none;
+  }
+  aside div:nth-child(4) {
+    display: none;
+  }
 }
