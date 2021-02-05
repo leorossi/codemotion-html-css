@@ -49,6 +49,8 @@ body {
 #content-wrapper {
   margin-top: 30px;
   width: 80%;
+  border-bottom: 1px solid gray;
+  padding: 30px;
 }
 
 #profile {
@@ -97,4 +99,22 @@ body {
 }
 #stats span {
   margin-right: 2rem;
+}
+
+#stories {
+  display: flex;
+}
+
+.story {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.story img {
+  border: 1px solid gray;
+  border-radius: 100px;
+  padding: 5px;
+  margin-bottom: .5rem;
+  
 }
