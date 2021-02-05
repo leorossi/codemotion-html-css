@@ -1,0 +1,22 @@
+#header-wrapper {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+}
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+#icons {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#icons #avatar {
+  border-radius: 50px;
+}
