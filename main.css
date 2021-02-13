@@ -50,7 +50,8 @@ body {
   margin-top: 30px;
   width: 80%;
   border-bottom: 1px solid gray;
-  padding: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 #profile {
@@ -117,4 +118,34 @@ body {
   padding: 5px;
   margin-bottom: .5rem;
   
+}
+
+#posts-wrapper {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: .5rem;
+}
+.post-wrapper {
+  position: relative;
+}
+.post-wrapper .overlay {
+  opacity: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: gray;
+  transition: .5s ease;
+}
+.post-wrapper:hover .overlay {
+  opacity: .75;
+}
+.post-wrapper .overlay .text:first-child {
+  margin-right: 20px;
 }
